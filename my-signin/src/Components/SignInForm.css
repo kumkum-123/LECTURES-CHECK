@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+.sign-in-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://www.33rdsquare.com/wp-content/uploads/2020/11/Best-Learning-Management-System.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.sign-in-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.app-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 40px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lectures-text {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.app-icon {
+  margin-right: 10px;
+  font-size: 1.0em;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px; /* Space between input fields */
+}
+
+.input-container .input-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.input-container input {
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #084c94;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; /* Space between Sign In button and inputs */
+}
+
+.form-container button:hover {
+  background-color: #032f5f;
+}
+

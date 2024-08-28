@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced top and bottom padding */
+  margin-bottom: 0; /* Remove margin bottom */
+  color: black;
+  font-family: 'Lato';
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #084c94, #0e76a8);
+  border-radius: 10px; /* Adjust the radius as needed */
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  top: 2px; /* Adjust to align with the outline */
+  left: 2px; /* Adjust to align with the outline */
+  right: 2px; /* Adjust to align with the outline */
+  bottom: 2px; /* Adjust to align with the outline */
+  border: 2px solid #084c94; /* Outline border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.226);
+  color: black; /* Change text color on hover */
+  cursor: pointer;
+}
+
+.navbar button {
+  color: black; /* Ensure button text is white */
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Added color transition */
+}
+
+.navbar button:hover {
+  color: black; /* Change button text color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+}

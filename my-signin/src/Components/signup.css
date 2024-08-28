@@ -1,0 +1,144 @@
+/*.addUser {
+  background-color: white;
+  width: 25%;
+  margin: 50px auto;
+  /* margin in top and bottom will be 50px  */
+  /* left and right auto  
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+
+  /* horizon offset vertical offset blur offset  */
+  /* opacity of shadow */
+  /* red, green, blue, and (opacity ). 
+}
+.addUserForm .inputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addUserForm .inputGroup label {
+  margin-top: 10px;
+}
+
+.addUserForm .inputGroup input {
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.inputGroup button {
+  margin-top: 10px;
+}
+.login {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login .btn.btn-primary {
+  width: 50%;
+}
+
+.addUser h3 {
+  text-align: center;
+  font-weight: bold;
+  color: darkcyan;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+} */
+/* Styles for navbar and sidebar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Example font import */
+
+.app-name {
+  font-family: 'Montserrat'; /* Change 'Roboto' to any preferred font */
+  font-size: 2.5em; /* Adjust font size as needed */
+  color: #084c94; /* Adjust color as needed */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;  /* Arrange elements horizontally */
+}
+
+.navbar {
+  background-color: #084c94; /* Adjust background color as desired */
+  padding: 15px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  width: 20%;  /* Set desired width for navbar */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: white;
+  width: 5%;  /* Adjust width as needed */
+  margin: 0;  /* Remove default margin */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+}
+
+.addUserForm .inputGroup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addUserForm .inputGroup label {
+  margin-top: 10px;
+}
+
+.addUserForm .inputGroup input {
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.inputGroup button {
+  margin-top: 10px;
+}
+
+.login {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login .btn.btn-primary {
+  width: 50%;
+}
+
+.addUser h3 {
+  text-align: center;
+  font-weight: bold;
+  color: darkcyan;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design for smaller screens (optional) */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;  /* Stack elements vertically on small screens */
+    align-items: center; /* Center elements vertically */
+  }
+
+  .navbar, .sidebar {
+    width: 50%;  /* Make navbar and sidebar full width on small screens */
+  }
+}
